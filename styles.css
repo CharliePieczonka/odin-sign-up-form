@@ -76,17 +76,32 @@ body {
     flex-direction: column;
     justify-content: end;
     background-color: #e0e1e2;
-    flex: 1;
+    flex: 2;
+    padding-left: 30px;
+    padding-right: 20%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+span {
+    font-style: italic;
+}
+
+#msg2 {
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 
 .middle {
     background-color: white;
     flex: 1;
+    padding-left: 30px;
 }
 
 .bottom {
     background-color: #e0e1e2;
-    flex: 1;
+    flex: 2;
+    padding-left: 30px;
 }
 
 .inputs {
