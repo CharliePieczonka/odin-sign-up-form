@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left {
+    background-image: url("images/plant.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 2;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #e0e1e2;
+    flex-grow: 1;
+}
+
+.middle {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.bottom {
+    background-color: #e0e1e2;
+    flex-grow: 1;
+}
+
+.inputs {
+    display: flex;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
