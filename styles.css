@@ -1,7 +1,7 @@
 @font-face {
     font-family: Norse-Bold-Font;
     src: url(fonts/Norse-Bold.otf);
-  }
+}
 
 * { 
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
@@ -11,6 +11,11 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .left {
@@ -64,6 +69,14 @@ body {
     font-size: 12px;
 }
 
+.footer a:link {
+    color: white;
+}
+
+.footer a:visited {
+    color: white;
+}
+
 .right {
     display: flex;
     flex-direction: column;
@@ -75,8 +88,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background-color: #e0e1e2;
-    flex: 2;
+    background-color: #f3f5f5;
+    flex: 1;
     padding-left: 30px;
     padding-right: 20%;
     font-weight: 500;
@@ -96,16 +109,20 @@ span {
     background-color: white;
     flex: 1;
     padding-left: 30px;
+    position:relative;
+    z-index:2;
+    box-shadow: 0px 5px 10px #cacbcb;
 }
 
-.bottom {
-    background-color: #e0e1e2;
-    flex: 2;
-    padding-left: 30px;
+.middle > p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 .inputs {
     display: flex;
+    gap: 60px;
 }
 
 .labels {
@@ -113,7 +130,55 @@ span {
     flex-direction: column;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+label {
+    font-size: 8px;
+    font-weight: 600;
+    color: grey;
 }
+
+input {
+    margin-bottom: 15px;
+    width: 200px;
+    border: 1px solid;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.bottom {
+    background-color: #f3f5f5;
+    flex: 1;
+    padding-left: 30px;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    width: 180px;
+    height: 35px;
+    color: white;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+.bottom > p {
+    font-size: 14px;
+}
+
+.bottom a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom a:link { 
+    color: #596D48;
+}
+
+.bottom a:visited {
+    color: #596D48;
+}
+
+
