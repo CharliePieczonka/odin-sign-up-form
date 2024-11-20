@@ -162,6 +162,12 @@ button {
     color: white;
     font-weight: 500;
     margin: 25px 0;
+    box-shadow: 0px 5px 10px #cacbcb;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: none;
 }
 
 .bottom > p {
@@ -181,4 +187,13 @@ button {
     color: #596D48;
 }
 
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid #2273f5;
+    box-shadow: 0px 5px 10px #cacbcb;
+}
 
